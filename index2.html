@@ -98,9 +98,8 @@
         ) {
           isHitted = true;
           clearInterval(start);
-          if (confirm("명중입니다. 다시 하시겠습니까?")) {
-            location.reload();
-          }
+          <a href="javascript:goNextPage('a');" target="_self"></a>
+          location.reload();
         }
       };
       const drawMissile = () => {
